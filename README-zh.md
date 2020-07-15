@@ -5,4 +5,5 @@
 - PyCharm
 - Alfred
 - Markdown-here
+- iterm2
 
