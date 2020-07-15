@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>customSites</key>
+	<dict>
+		<key>18A526F6-37EE-447E-9B1C-1D43B80AA8C1</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>github</string>
+			<key>text</key>
+			<string>Search github.com for '{query}'</string>
+			<key>url</key>
+			<string>https://github.com/search?q={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>489588D6-D7E5-4CA7-8E45-B109FC29343D</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>baidu</string>
+			<key>text</key>
+			<string>Search www.baidu.com for '{query}'</string>
+			<key>url</key>
+			<string>https://www.baidu.com/s?wd={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>6CAE5DA7-081E-4298-A536-20B18DADB288</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>zhihu</string>
+			<key>text</key>
+			<string>Search www.zhihu.com for '{query}'</string>
+			<key>url</key>
+			<string>http://www.zhihu.com/search?q={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
