@@ -6,4 +6,5 @@ Miscellaneous settings files I use：
 - Alfred
 - Markdown-here
 - iterm2
+- zsh (using antigen)
 

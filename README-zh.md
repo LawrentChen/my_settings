@@ -6,4 +6,5 @@
 - Alfred
 - Markdown-here
 - iterm2
+- zsh (使用 antigen)
 
