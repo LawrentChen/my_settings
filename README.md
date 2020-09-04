@@ -7,4 +7,4 @@ Miscellaneous settings files I use：
 - Markdown-here
 - iterm2
 - zsh (using antigen)
-
+- jupyter lab extensions installation script

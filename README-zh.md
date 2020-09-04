@@ -7,4 +7,4 @@
 - Markdown-here
 - iterm2
 - zsh (使用 antigen)
-
+- jupyter lab 插件安装脚本
