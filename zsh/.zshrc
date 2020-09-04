@@ -21,26 +21,28 @@ antigen theme agnoster
 # Tell Antigen that you're done.
 antigen apply
 
-
-# added by Anaconda3 2018.12 installer
-# >>> conda init >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$(CONDA_REPORT_ERRORS=false '/Users/<your-user-name>/anaconda3/bin/conda' shell.bash hook 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    \eval "$__conda_setup"
-else
-    if [ -f "/Users/<your-user-name>/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/<your-user-name>/anaconda3/etc/profile.d/conda.sh"
-        CONDA_CHANGEPS1=false conda activate base
-    else
-        \export PATH="/Users/<your-user-name>/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda init <<<
-
 # MySQL
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 
-# omit user name
+# Omit user name
 DEFAULT_USER='<your-user-name>'
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/<your-user-name>/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/<your-user-name>/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/<your-user-name>/opt/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/<your-user-name>/opt/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+# Use the command below to prevent command prompt showing
+# the name of the active conda environment, which is not necessary
+# to add to the .zshrc file
+# conda config --set changeps1 false
