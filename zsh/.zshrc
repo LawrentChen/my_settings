@@ -24,25 +24,23 @@ antigen apply
 # MySQL
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 
-# Omit user name
-DEFAULT_USER='<your-user-name>'
+# omit user name
+DEFAULT_USER='chenzhihao'
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/<your-user-name>/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/Users/chenzhihao/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/Users/<your-user-name>/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/<your-user-name>/opt/anaconda3/etc/profile.d/conda.sh"
+    if [ -f "/Users/chenzhihao/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/chenzhihao/opt/anaconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/Users/<your-user-name>/opt/anaconda3/bin:$PATH"
+        export PATH="/Users/chenzhihao/opt/anaconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-# Use the command below to prevent command prompt showing
-# the name of the active conda environment, which is not necessary
-# to add to the .zshrc file
-# conda config --set changeps1 false
+# add customize shell script path
+export PATH=$PATH:~/bin
